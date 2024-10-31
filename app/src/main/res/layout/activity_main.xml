@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/gameStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <!-- Grade 3x3 para o tabuleiro do jogo -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button4"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button5"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button7"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/TicTacToeButton" />
+    </GridLayout>
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
